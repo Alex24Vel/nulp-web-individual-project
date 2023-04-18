@@ -1,6 +1,18 @@
 /* Importing Roboto font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+/* custom variables */
+:root {
+    --blue: #14213D;
+    --orange: #FCA311;
+    --gray: #8D99AE;
+    --light-gray: #F2F2F2;
+
+    /* overriding bootstrap */
+    --cstm-bs-navbar-color: #fff;
+    --cstm-bs-nav-link-hover-color: #8b96a8;
+}
+
 * {
     font-family: "Roboto", sans-serif, "Geneva", "Tahoma", "Verdana";
     font-weight: 500;
@@ -8,10 +20,13 @@
 }
 
 /* Header Navbar*/
-
 .navbar {
     display: block;
-    background-color: rgba(174, 175, 231, 0.123);
+    background-color: var(--blue);
+    color: var(--cstm-bs-navbar-color);
+    --bs-navbar-color: var(--cstm-bs-navbar-color);
+    --bs-navbar-active-color: var(--cstm-bs-navbar-color);
+    --bs-nav-link-hover-color: var(--light-gray);
 }
 
 .navbar-brand {
@@ -19,6 +34,11 @@
     width: 1.5em;
     height: 1.5em;
 }
+/* inverting color to white because .navbar-brand: color: #fff doesn't work */
+.navbar-brand img {
+    filter: invert(1);
+}
+
 /* distance between logo and menu */
 @media (max-width: 576px) {
     .navbar {
@@ -37,12 +57,35 @@
     --bs-nav-link-padding-y: 1rem;
     --bs-nav-link-font-size: 1.1rem;
     --bs-nav-link-font-weight: 400;
-    --bs-nav-link-color: #0a0a0a;
+    --bs-nav-link-color: var(--cstm-bs-navbar-color);
+    --bs-nav-link-hover-color: var(--gray);
     display: flex;
     justify-content: space-between;
 }
-
 .navbar-nav .nav-item {
     margin-right: 1.5em;
 }
 /* /Header Navbar */
+
+
+/* Main */
+
+/* Section Hero*/
+.hero {
+    padding: 5% 1%;
+    background-color: #a2bcff2d;
+}
+.text-center {
+    align-self: center;
+}
+.hero p[class="lead"] {
+    margin-top: 4%;
+    text-align: justify;
+}
+.hero-img {
+    justify-self: center;
+    align-self: center;
+}
+/* /Section Hero*/
+
+/* /Main */
