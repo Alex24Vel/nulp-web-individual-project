@@ -1,0 +1,48 @@
+/* Importing Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif, "Geneva", "Tahoma", "Verdana";
+    font-weight: 500;
+    box-sizing: content-box;
+}
+
+/* Header Navbar*/
+
+.navbar {
+    display: block;
+    background-color: rgba(174, 175, 231, 0.123);
+}
+
+.navbar-brand {
+    margin: 0 1.5em 0.15em 1em;
+    width: 1.5em;
+    height: 1.5em;
+}
+/* distance between logo and menu */
+@media (max-width: 576px) {
+    .navbar {
+        display: flex;
+    }
+    .navbar-brand {
+        margin-left: 5%;
+        margin-right: 65%;
+    }
+    .navbar-toggler {
+        margin-right: 5%;
+    }
+}
+
+.navbar-nav {
+    --bs-nav-link-padding-y: 1rem;
+    --bs-nav-link-font-size: 1.1rem;
+    --bs-nav-link-font-weight: 400;
+    --bs-nav-link-color: #0a0a0a;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1.5em;
+}
+/* /Header Navbar */
