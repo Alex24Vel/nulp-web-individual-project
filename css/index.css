@@ -67,7 +67,6 @@
 }
 /* /Header Navbar */
 
-
 /* Main */
 
 /* Section Hero*/
@@ -78,9 +77,11 @@
 .text-center {
     align-self: center;
 }
-.hero p[class="lead"] {
+.hero p {
     margin-top: 4%;
     text-align: justify;
+    font-size: 1.25rem;
+    color: #3e3e3edf;
 }
 .hero-img {
     justify-self: center;
@@ -89,3 +90,38 @@
 /* /Section Hero*/
 
 /* /Main */
+
+/* Footer */
+ 
+/* .copy-sym {
+    //display: inline-block; 
+    font-size: 1.25em; 
+    color: #788cc8;
+    display: none;
+}  */
+
+footer {
+   padding: 1em 20%;
+   background-color: var(--blue);
+}
+/* overwriting bootstrap links properties */
+footer .text-body-secondary {
+    margin-right: 1em;
+    --bs-text-opacity: 1;
+    color: #fff  !important;
+}
+footer .text-body-secondary:hover {
+    color: #ededed !important;
+}
+/* copyright symbol and name*/
+.footer-link {
+    text-decoration: none;
+    font-size: 1.15em;
+    color: #fff;
+    margin-left: 0.5em;
+}
+footer .footer-link:hover {
+    color: #ededed;
+}
+
+/* /Footer */
