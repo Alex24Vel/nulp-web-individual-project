@@ -99,6 +99,14 @@
     background-color: #a4c1ff68;
     margin: -1rem;
 }
+#healthy-diet-benefits > h1 {
+    display: inline-flex;
+    margin-top: 0.5em;
+    margin-left: 25%;
+    margin-right: 20%;
+    float: left;
+}
+
 /* carousel */
 .carousel {
     margin-bottom: 4rem;
