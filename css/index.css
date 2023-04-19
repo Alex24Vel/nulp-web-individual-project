@@ -1,7 +1,6 @@
-/* Importing Roboto font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-/* custom variables */
+/* -------------- custom variables ---------------- */
 :root {
     --blue: #14213D;
     --orange: #FCA311;
@@ -19,7 +18,7 @@
     box-sizing: content-box;
 }
 
-/* Header Navbar*/
+/* -------------- <header> (<nav>) ---------------- */
 .navbar {
     display: block;
     background-color: var(--blue);
@@ -34,6 +33,7 @@
     width: 1.5em;
     height: 1.5em;
 }
+
 /* inverting color to white because .navbar-brand: color: #fff doesn't work */
 .navbar-brand img {
     filter: invert(1);
@@ -44,10 +44,12 @@
     .navbar {
         display: flex;
     }
+
     .navbar-brand {
         margin-left: 5%;
         margin-right: 65%;
     }
+
     .navbar-toggler {
         margin-right: 5%;
     }
@@ -62,57 +64,85 @@
     display: flex;
     justify-content: space-between;
 }
+
 .navbar-nav .nav-item {
     margin-right: 1.5em;
 }
-/* /Header Navbar */
+/* -------------- </header> (</nav>)---------------- */
 
-/* Main */
-
-/* Section Hero*/
-.hero {
+/* -------------- <main> ---------------- */
+/* -------------- <section> (#1 - hero) ---------------- */
+#hero {
     padding: 5% 1%;
     background-color: #a2bcff2d;
 }
+
 .text-center {
     align-self: center;
 }
-.hero p {
+
+#hero p {
     margin-top: 4%;
     text-align: justify;
     font-size: 1.25rem;
     color: #3e3e3edf;
 }
+
 .hero-img {
     justify-self: center;
     align-self: center;
 }
-/* /Section Hero*/
+/* -------------- </section> (#1 - hero) ---------------- */
 
-/* /Main */
-
-/* Footer */
- 
-/* .copy-sym {
-    //display: inline-block; 
-    font-size: 1.25em; 
-    color: #788cc8;
-    display: none;
-}  */
-
-footer {
-   padding: 1em 20%;
-   background-color: var(--blue);
+/* -------------- <section> (#2 - healthy-diet-benefits) ---------------- */
+#healthy-diet-benefits {
+    background-color: #a4c1ff68;
+    margin: -1rem;
 }
+/* carousel */
+.carousel {
+    margin-bottom: 4rem;
+    margin: 1em 2em;
+}
+.carousel-img {
+    margin: 2em 0;
+    height: 500px;
+    width: 500px;
+}
+
+/* declared heights because of positioning of img element */
+.carousel-item > .row > .container {
+    align-self: center;
+    justify-content: center;
+}
+.carousel-item p {
+    margin-top: 2em;
+    text-align: justify;
+    font-size: 1.15em;
+    color: rgb(62, 62, 62);
+}
+/* /carousel */
+
+/* -------------- </section> (#2 - healthy-diet-benefits) ---------------- */
+/* -------------- </main> ---------------- */
+
+/* -------------- <footer> ---------------- */
+footer {
+    padding: 1em 20%;
+    background-color: var(--blue);
+}
+
 /* overwriting bootstrap links properties */
 footer .text-body-secondary {
     margin-right: 1em;
     --bs-text-opacity: 1;
-    color: #fff  !important;
+    color: #fff !important;
 }
+
 footer .text-body-secondary:hover {
     color: #ededed !important;
 }
+
 /* copyright symbol and name*/
 .footer-link {
     text-decoration: none;
@@ -120,8 +150,9 @@ footer .text-body-secondary:hover {
     color: #fff;
     margin-left: 0.5em;
 }
+
 footer .footer-link:hover {
     color: #ededed;
 }
 
-/* /Footer */
+/* -------------- </footer> ---------------- */
