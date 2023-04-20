@@ -29,8 +29,8 @@
 }
 .navbar-brand {
     margin: 0 1.5em 0.15em 1em;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.75em;
+    height: 1.75em;
 }
 /* inverting color to white because .navbar-brand: color: #fff doesn't work */
 .navbar-brand img {
@@ -53,7 +53,7 @@
 }
 .navbar-nav {
     --bs-nav-link-padding-y: 1rem;
-    --bs-nav-link-font-size: 1.1rem;
+    --bs-nav-link-font-size: 1.25rem;
     --bs-nav-link-font-weight: 400;
     --bs-nav-link-color: var(--cstm-bs-navbar-color);
     --bs-nav-link-hover-color: var(--gray);
