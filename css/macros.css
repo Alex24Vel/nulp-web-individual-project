@@ -1,0 +1,59 @@
+/* ---------------- <main> ------------------*/
+
+/* ---------------- <section #hero> ------------------*/
+#hero {
+    background-color: #c1d6ff20;
+    padding: 2% 5%;
+}
+#hero > h1 {
+    text-align: center;
+}
+.hero-list-ul {
+    list-style-type: none;
+}
+.hero-list-ul li {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+.hero-list-ul li a {
+    text-decoration: none;
+    color: #4d5ea4; 
+}
+.hero-list-ul li a:visited {
+    color: #627deb;
+}
+.hero-list-ul li a:hover {
+    color: #758dec;
+}
+.hero-intro {
+    font-size: 1.15em;
+    text-align: justify;
+}
+/* ---------------- </section #hero> ------------------*/
+
+/* ---------------- <section #accordion> ------------------*/
+#macros-accordion {
+    background-color: #9cbdff20;
+}
+.accordion {
+    padding: 2% 5%;
+}
+.accordion-button {
+    font-size: 0.65em;
+    font-weight: 500;
+    color: #030423;
+}
+.accordion-item-img {
+    display: block; /* make the image a block-level element */
+    margin: 1em auto 2em; 
+}
+.accordion-item-text {
+    font-size: 1.15em;
+    text-align: justify;
+    margin-top: 1.5em;
+}
+
+/* ---------------- </section #accordion> ------------------*/
+
+
+/* ---------------- </main> ------------------*/

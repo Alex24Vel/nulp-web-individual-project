@@ -68,20 +68,20 @@
 
 /* -------------- <main> ---------------- */
 /* -------------- <section> (#1 - hero) ---------------- */
-#hero {
+#index-hero {
     padding: 5% 1%;
     background-color: #a2bcff2d;
 }
 .text-center {
     align-self: center;
 }
-#hero p {
+#index-hero p {
     margin-top: 4%;
     text-align: justify;
     font-size: 1.25rem;
     color: #3e3e3edf;
 }
-.hero-img {
+.index-hero-img {
     justify-self: center;
     align-self: center;
 }
