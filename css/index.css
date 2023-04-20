@@ -15,7 +15,7 @@
 * {
     font-family: "Roboto", sans-serif, "Geneva", "Tahoma", "Verdana";
     font-weight: 500;
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
 }
 
 /* -------------- <header> (<nav>) ---------------- */
@@ -27,18 +27,15 @@
     --bs-navbar-active-color: var(--cstm-bs-navbar-color);
     --bs-nav-link-hover-color: var(--light-gray);
 }
-
 .navbar-brand {
     margin: 0 1.5em 0.15em 1em;
     width: 1.5em;
     height: 1.5em;
 }
-
 /* inverting color to white because .navbar-brand: color: #fff doesn't work */
 .navbar-brand img {
     filter: invert(1);
 }
-
 /* distance between logo and menu */
 @media (max-width: 576px) {
     .navbar {
@@ -54,7 +51,6 @@
         margin-right: 5%;
     }
 }
-
 .navbar-nav {
     --bs-nav-link-padding-y: 1rem;
     --bs-nav-link-font-size: 1.1rem;
@@ -64,10 +60,10 @@
     display: flex;
     justify-content: space-between;
 }
-
 .navbar-nav .nav-item {
     margin-right: 1.5em;
 }
+
 /* -------------- </header> (</nav>)---------------- */
 
 /* -------------- <main> ---------------- */
@@ -76,35 +72,30 @@
     padding: 5% 1%;
     background-color: #a2bcff2d;
 }
-
 .text-center {
     align-self: center;
 }
-
 #hero p {
     margin-top: 4%;
     text-align: justify;
     font-size: 1.25rem;
     color: #3e3e3edf;
 }
-
 .hero-img {
     justify-self: center;
     align-self: center;
 }
+
 /* -------------- </section> (#1 - hero) ---------------- */
 
 /* -------------- <section> (#2 - healthy-diet-benefits) ---------------- */
 #healthy-diet-benefits {
     background-color: #a4c1ff68;
-    margin: -1rem;
+    padding: 0.1%;
 }
-#healthy-diet-benefits > h1 {
-    display: inline-flex;
+#healthy-diet-benefits .display-5 {
+    text-align: center;
     margin-top: 0.5em;
-    margin-left: 25%;
-    margin-right: 20%;
-    float: left;
 }
 
 /* carousel */
@@ -112,14 +103,19 @@
     margin-bottom: 4rem;
     margin: 1em 2em;
 }
-.carousel-img {
-    margin: 2em 0;
-    height: 500px;
-    width: 500px;
+.carousel-item-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
 }
-
+.carousel-img {
+    margin: 2em 1em;
+    height: 25em;
+    width: 25em;
+}
 /* declared heights because of positioning of img element */
-.carousel-item > .row > .container {
+.carousel-item>.row>.container {
     align-self: center;
     justify-content: center;
 }
@@ -129,6 +125,10 @@
     font-size: 1.15em;
     color: rgb(62, 62, 62);
 }
+.carousel-control-btn {
+    margin: -3.5em;
+}
+
 /* /carousel */
 
 /* -------------- </section> (#2 - healthy-diet-benefits) ---------------- */
@@ -139,18 +139,15 @@ footer {
     padding: 1em 20%;
     background-color: var(--blue);
 }
-
 /* overwriting bootstrap links properties */
 footer .text-body-secondary {
     margin-right: 1em;
     --bs-text-opacity: 1;
     color: #fff !important;
 }
-
 footer .text-body-secondary:hover {
     color: #ededed !important;
 }
-
 /* copyright symbol and name*/
 .footer-link {
     text-decoration: none;
@@ -158,9 +155,7 @@ footer .text-body-secondary:hover {
     color: #fff;
     margin-left: 0.5em;
 }
-
 footer .footer-link:hover {
     color: #ededed;
 }
-
 /* -------------- </footer> ---------------- */
