@@ -37,18 +37,19 @@
     filter: invert(1);
 }
 /* distance between logo and menu */
-@media (max-width: 576px) {
+@media (max-width: 767px) {
     .navbar {
         display: flex;
     }
-
     .navbar-brand {
         margin-left: 5%;
         margin-right: 65%;
     }
-
     .navbar-toggler {
         margin-right: 5%;
+    }
+    .navbar-toggler-icon{
+        filter: invert(100%);
     }
 }
 .navbar-nav {
@@ -72,6 +73,9 @@
     padding: 5% 1%;
     background-color: #a2bcff2d;
 }
+#index-hero > .container-fluid{
+    display: flex;
+}
 .text-center {
     align-self: center;
 }
@@ -82,10 +86,18 @@
     color: #3e3e3edf;
 }
 .index-hero-img {
+    margin: 2.5%;
     justify-self: center;
     align-self: center;
 }
-
+@media (max-width: 768px) {
+    #index-hero > .container-fluid {
+        display: inline-block;
+    }
+    .index-hero-img {
+        margin-top: 2em;
+    }
+}
 /* -------------- </section> (#1 - hero) ---------------- */
 
 /* -------------- <section> (#2 - healthy-diet-benefits) ---------------- */
@@ -108,14 +120,15 @@
     align-items: center;
     justify-content: flex-end;
     gap: 1rem;
+    margin-bottom: 2em;
 }
 .carousel-img {
     margin: 2em 1em;
-    height: 25em;
-    width: 25em;
+    height: 20em;
+    width: 30em;
 }
 /* declared heights because of positioning of img element */
-.carousel-item>.row>.container {
+.carousel-item > .row > .container {
     align-self: center;
     justify-content: center;
 }
@@ -129,6 +142,11 @@
     margin: -3.5em;
 }
 
+@media (max-width: 768px) {
+    .carousel-item-content {
+        display: block;
+    }
+}
 /* /carousel */
 
 /* -------------- </section> (#2 - healthy-diet-benefits) ---------------- */
