@@ -97,6 +97,10 @@
     font-size: 1.2em;
     text-align: justify;
 }
+.bs-tab-pill-container {
+    background-color: #eaefff2d;
+    box-shadow: rgba(207, 230, 255, 0.2) 0px 8px 24px;
+}
 
 /* ---------------- </section #balanced-menu ----------------*/
 
@@ -113,8 +117,7 @@
 
 .videos-container {
     list-style: none;
-    padding: 0em 2em;
-    margin: 0;
+    text-align: center;
 }
 
 .my-li-item {
@@ -122,7 +125,9 @@
     margin: 0.15em 0.25em;
 }
 
-.my-li-item iframe{
+.my-li-item iframe {
+    box-shadow: rgba(78, 101, 148, 0.3) 0px 0px 0px 3px;
+    margin-right: 0.5em;
     border-radius: 8px;
 }
 /* ---------------- </section #recommendations ----------------*/

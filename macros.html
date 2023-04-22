@@ -222,106 +222,117 @@
                 одиного?
             </p>
             <!-- bootstrap tabs-pills -->
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active bs-tab-pill-title-btn" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true">Білки</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link bs-tab-pill-title-btn" id="pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                        aria-selected="false">Жири</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link bs-tab-pill-title-btn" id="pills-contact-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                        aria-selected="false">Вуглеводи</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-                    tabindex="0">
-                    <p class="bs-tab-pill-p">
-                        Для їхнього засвоєння потребується багато енергії, а оскільки ввечері обмінні процеси
-                        дещо
-                        уповільнюються, то оптимальним часом для вживання білків є друга частина дня. Якщо
-                        враховувати,
-                        що на перетравлювання білків витрачаються також жири та вуглеводи, то найкраще їх у
-                        різній
-                        кількості розділити поміж усіма прийомами їжі. Отже, протягом дня кількість вуглеводів
-                        має
-                        знижуватися, а білків — зростати.
-                    </p>
-                    <p class="bs-tab-pill-p">
-                        Серед продуктів, які багаті на білок, можна виділити наступні: соя, червона ікра,
-                        креветки,
-                        куряча грудка, яловичина, свинина, сир, молоко, яйця, сочевиця, червона квасоля, горох й
-                        не
-                        тільки.
-                    </p>
-                </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                    tabindex="0">
-                    <p class="bs-tab-pill-p">
-                        Їх треба розділити на весь день. Кількість жирів напряму залежить від інших компонентів.
-                        Якщо
-                        ваш сніданок високовуглеводний, то жирів краще з’їсти менше. А якщо обід складається з
-                        великої
-                        кількості білків, варто додати трохи більше жирів. Якщо враховувати рекомендації з
-                        правильного
-                        харчування по вживанню вуглеводів, то в першій половині дня жирів потрібно їсти менше, у
-                        другій
-                        — більше.
-                    </p>
-                    <p class="bs-tab-pill-p">
-                        До раціону слід додати наступні продукти, що мають у своєму складі корисні жири:
-                        авокадо,
-                        оливкова та лляна олія, горіхи, морську рибу жирних сортів, насіння соняшника, гарбуз,
-                        кунжут й
-                        т.д.
-                    </p>
-                    <p class="bs-tab-pill-p">
-                        Отже, у <strong>першій половині доби</strong> вживаємо вуглеводи та трохи жирів і
-                        білків: це
-                        бобові, каші, хліб, фрукти (наприклад, яблуко, грушу, персик й інше). У
-                        <strong>другій</strong>
-                        — білки та клітковину: нежирні сорти риби та м’яса, молокопродукти, овочі. Жири в
-                        невеликій
-                        кількості треба споживати протягом усього дня.
-                    </p>
-                </div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-                    tabindex="0">
-                    <p class="bs-tab-pill-p">Більшу частину їх краще споживати в першій половині дня — на
-                        сніданок
-                        та обід. Це каші (вівсянка,
-                        гречка), макарони, картопля, хліб і т.д. А от овочі та фрукти, що також містять цей
-                        компонент,
-                        можна їсти на полуденок та вечерю, оскільки вони складаються переважно з клітковини та
-                        трохи
-                        з
-                        вуглеводів.
-                    </p>
+            <div class="bs-tab-pill-container">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active bs-tab-pill-title-btn" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">Білки</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bs-tab-pill-title-btn" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Жири</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bs-tab-pill-title-btn" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Вуглеводи</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0">
+                        <p class="bs-tab-pill-p">
+                            Для їхнього засвоєння потребується багато енергії, а оскільки ввечері обмінні процеси
+                            дещо
+                            уповільнюються, то оптимальним часом для вживання білків є друга частина дня. Якщо
+                            враховувати,
+                            що на перетравлювання білків витрачаються також жири та вуглеводи, то найкраще їх у
+                            різній
+                            кількості розділити поміж усіма прийомами їжі. Отже, протягом дня кількість вуглеводів
+                            має
+                            знижуватися, а білків — зростати.
+                        </p>
+                        <p class="bs-tab-pill-p">
+                            Серед продуктів, які багаті на білок, можна виділити наступні: соя, червона ікра,
+                            креветки,
+                            куряча грудка, яловичина, свинина, сир, молоко, яйця, сочевиця, червона квасоля, горох й
+                            не
+                            тільки.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                        tabindex="0">
+                        <p class="bs-tab-pill-p">
+                            Їх треба розділити на весь день. Кількість жирів напряму залежить від інших компонентів.
+                            Якщо
+                            ваш сніданок високовуглеводний, то жирів краще з’їсти менше. А якщо обід складається з
+                            великої
+                            кількості білків, варто додати трохи більше жирів. Якщо враховувати рекомендації з
+                            правильного
+                            харчування по вживанню вуглеводів, то в першій половині дня жирів потрібно їсти менше, у
+                            другій
+                            — більше.
+                        </p>
+                        <p class="bs-tab-pill-p">
+                            До раціону слід додати наступні продукти, що мають у своєму складі корисні жири:
+                            авокадо,
+                            оливкова та лляна олія, горіхи, морську рибу жирних сортів, насіння соняшника, гарбуз,
+                            кунжут й
+                            т.д.
+                        </p>
+                        <p class="bs-tab-pill-p">
+                            Отже, у <strong>першій половині доби</strong> вживаємо вуглеводи та трохи жирів і
+                            білків: це
+                            бобові, каші, хліб, фрукти (наприклад, яблуко, грушу, персик й інше). У
+                            <strong>другій</strong>
+                            — білки та клітковину: нежирні сорти риби та м’яса, молокопродукти, овочі. Жири в
+                            невеликій
+                            кількості треба споживати протягом усього дня.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">
+                        <p class="bs-tab-pill-p">Більшу частину їх краще споживати в першій половині дня — на
+                            сніданок
+                            та обід. Це каші (вівсянка,
+                            гречка), макарони, картопля, хліб і т.д. А от овочі та фрукти, що також містять цей
+                            компонент,
+                            можна їсти на полуденок та вечерю, оскільки вони складаються переважно з клітковини та
+                            трохи
+                            з
+                            вуглеводів.
+                        </p>
+                    </div>
                 </div>
             </div>
             <!-- /bootstrap tabs-pills -->
-    </section>
+        </section>
 
-    <section id="recommendations">
-        <h2>Додаткові матеріали</h2>
+        <section id="recommendations">
+            <h2>Додаткові матеріали</h2>
             <ul class="videos-container">
                 <li class="my-li-item">
-                    <iframe width="416" height="360" src="https://www.youtube.com/embed/Q2FwLSSXZFY" title="What is protein? | Herbalife Nutrition" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="416" height="360" src="https://www.youtube.com/embed/Q2FwLSSXZFY"
+                        title="What is protein? | Herbalife Nutrition" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </li>
                 <li class="my-li-item">
-                    <iframe width="416" height="360" src="https://www.youtube.com/embed/wxzc_2c6GMg" title="How do carbohydrates impact your health? - Richard J. Wood" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="416" height="360" src="https://www.youtube.com/embed/wxzc_2c6GMg"
+                        title="How do carbohydrates impact your health? - Richard J. Wood" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </li>
                 <li class="my-li-item">
-                    <iframe width="416" height="360" src="https://www.youtube.com/embed/QhUrc4BnPgg" title="What is fat? - George Zaidan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="416" height="360" src="https://www.youtube.com/embed/QhUrc4BnPgg"
+                        title="What is fat? - George Zaidan" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </li>
             </ul>
-    </section>
+        </section>
 
     </main>
 
