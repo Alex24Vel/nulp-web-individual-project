@@ -109,7 +109,6 @@
     background-color: #d2e1ff48;
     padding: 0 5%;
 }
-
 #recommendations>h2 {
     text-align: center;
     margin-bottom: 1em;
@@ -119,17 +118,32 @@
     list-style: none;
     text-align: center;
 }
-
 .my-li-item {
     display: inline;
     margin: 0.15em 0.25em;
 }
-
 .my-li-item iframe {
+    width: 416px;
+    height: 360px;
+
     box-shadow: rgba(78, 101, 148, 0.3) 0px 0px 0px 3px;
     margin-right: 0.5em;
     border-radius: 8px;
 }
+
+@media (max-width: 768px) {
+    .my-li-item iframe {
+        width: 328px;
+        height: 192px;
+    }
+}
+@media (max-width: 496px) {
+    .my-li-item iframe {
+        width: 256px;
+        height: 192px;
+    }
+}
+
 /* ---------------- </section #recommendations ----------------*/
 
 /* ---------------- </main> ------------------*/
