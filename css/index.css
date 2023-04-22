@@ -145,6 +145,15 @@
 @media (max-width: 768px) {
     .carousel-item-content {
         display: block;
+        margin-bottom: 4em;
+    }
+    .carousel-control-btn {
+        margin: 0em -1.5em;
+    }
+}
+@media (max-width: 576px) {
+    .carousel-control-btn {
+        display: none;
     }
 }
 /* /carousel */
