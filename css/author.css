@@ -4,6 +4,7 @@ html, body {
 /* getting rid of whitespace under the footer */
 main {
     min-height: calc(100% - 160px);
+    padding: 2% 5%;
 }
 
 .col-7 > h1, h2 {
@@ -24,11 +25,11 @@ main {
     text-align: center;
 }
 .social-icon {
+    width: 1.25em;
     font-size: 1.75em;
     color: darkblue;
     margin-right: 1em;
 }
-iframe {
-    text-align: center;
-    border-radius: 12px;
+.google-map {
+    margin-top: 3em;
 }
