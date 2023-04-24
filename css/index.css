@@ -70,7 +70,7 @@
 /* -------------- <main> ---------------- */
 /* -------------- <section> (#1 - hero) ---------------- */
 #index-hero {
-    padding: 5% 1%;
+    padding: 2% 5%;
     background-color: #a2bcff2d;
 }
 #index-hero > .container-fluid{

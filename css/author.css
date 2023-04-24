@@ -1,21 +1,10 @@
-html, body {
-    height: 100%;
-}
-/* getting rid of whitespace under the footer */
-main {
-    min-height: calc(100% - 160px);
+#about-me {
     padding: 2% 5%;
 }
-
-.col-7 > h1, h2 {
+.about-text-block > h1, h2, P {
     text-align: center;
+    justify-content: center;
     margin: 1em;
-}
-.col-7 > p {
-    text-align: justify;
-}
-.container {
-    padding: 5%;
 }
 .avatar {
     border-radius: 8px;
@@ -30,6 +19,12 @@ main {
     color: darkblue;
     margin-right: 1em;
 }
-.google-map {
+
+#google-map {
     margin-top: 3em;
+    text-align: center;
+    padding: 2% 5%;
+}
+.google-map > iframe {
+    border-radius: 12px;
 }
