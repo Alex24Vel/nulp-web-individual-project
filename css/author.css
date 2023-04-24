@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    font-family: "Raleway", "Roboto", sans-serif, "Geneva", "Tahoma", "Verdana";
+}
+
+/* --------- <section #about-me> ----------- */
 #about-me {
     padding: 2% 5%;
 }
@@ -7,6 +13,7 @@
     margin: 1em;
 }
 .avatar {
+    margin-top: 5%;
     border-radius: 8px;
     width: 328px;
 }
@@ -20,11 +27,98 @@
     margin-right: 1em;
 }
 
+/* --------- </section #about-me> ----------- */
+
+/* --------- <section #google-map> ----------- */
 #google-map {
     margin-top: 3em;
     text-align: center;
     padding: 2% 5%;
 }
-.google-map > iframe {
+#google-map > iframe {
+    width: 1280px;
+    height: 720px;
     border-radius: 12px;
 }
+/* --------- </section #google-map> ----------- */
+
+
+/* --------------- responsiveness -------------- */
+@media (max-width: 1920px) {
+    /* ------------- <section #about-me> ------------*/
+    .avatar {
+        margin-top: 15%;
+        width: 256px;
+    }
+    /* ------------- <section #google-map> ------------*/
+    #google-map > iframe {
+        width: 960px;
+        height: 640px;
+        border-radius: 12px;
+    }
+}
+@media (max-width: 1280px) {
+    /* ------------- <section #about-me> ------------*/
+    .avatar {
+        margin-top: 15%;
+        width: 216px;
+    }
+    /* ------------- <section #google-map> ------------*/
+    #google-map > iframe {
+        width: 720px;
+        height: 480px;
+        border-radius: 12px;
+    }
+}
+@media (max-width: 768px) {
+    /* ------------- <section #about-me> ------------*/
+    .avatar {
+        margin-top: 15%;
+        width: 128px;
+    }
+    /* ------------- <section #google-map> ------------*/
+    #google-map {
+        margin-top: 3em;
+        text-align: center;
+        padding: 2% 3%;
+    }
+    #google-map > iframe {
+        width: 480px;
+        height: 360px;
+    }
+}
+@media (max-width: 512px) {
+    /* ------------- <section #about-me> ------------*/
+    .avatar {
+        margin: 35% 2%;
+        width: 96px;
+    }
+    /* ------------- <section #google-map> ------------*/
+    #google-map {
+        margin-top: 3em;
+        text-align: center;
+        padding: 2% 3%;
+    }
+    #google-map > iframe {
+        width: 300px;
+        height: 360px;
+    }
+}
+@media (max-width: 384px) {
+    /* ------------- <section #about-me> ------------*/
+    .avatar {
+        margin-top: 15%;
+        width: 96px;
+    }
+    /* ------------- <section #google-map> ------------*/
+    #google-map {
+        margin-top: 3em;
+        text-align: center;
+        padding: 2% 3%;
+    }
+    #google-map > iframe {
+        width: 300px;
+        height: 192px;
+    }
+}
+/* --------------- /responsiveness -------------- */

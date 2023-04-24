@@ -1,21 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    font-family: "Raleway", "Roboto", sans-serif, "Geneva", "Tahoma", "Verdana";
+}
 
 /* -------------- custom variables ---------------- */
 :root {
     --blue: #14213D;
-    --orange: #FCA311;
-    --gray: #8D99AE;
-    --light-gray: #F2F2F2;
-
     /* overriding bootstrap */
     --cstm-bs-navbar-color: #fff;
     --cstm-bs-nav-link-hover-color: #8b96a8;
-}
-
-* {
-    font-family: "Roboto", sans-serif, "Geneva", "Tahoma", "Verdana";
-    font-weight: 500;
-    /* box-sizing: content-box; */
 }
 
 /* -------------- <header> (<nav>) ---------------- */
@@ -25,7 +18,7 @@
     color: var(--cstm-bs-navbar-color);
     --bs-navbar-color: var(--cstm-bs-navbar-color);
     --bs-navbar-active-color: var(--cstm-bs-navbar-color);
-    --bs-nav-link-hover-color: var(--light-gray);
+    --bs-nav-link-hover-color: #F2F2F2;
 }
 .navbar-brand {
     margin: 0 1.5em 0.15em 1em;
@@ -57,7 +50,7 @@
     --bs-nav-link-font-size: 1.25rem;
     --bs-nav-link-font-weight: 400;
     --bs-nav-link-color: var(--cstm-bs-navbar-color);
-    --bs-nav-link-hover-color: var(--gray);
+    --bs-nav-link-hover-color: #8D99AE;
     display: flex;
     justify-content: space-between;
 }
